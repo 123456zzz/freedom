@@ -1,0 +1,27 @@
+{
+  "name": "freedom",
+  "version": "1.0.0",
+  "description": "freedom is a web chat application,build by react,koa,socket.io and mongodb.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/123456zzz/freedom.git"
+  },
+  "keywords": [
+    "IM",
+    "react",
+    "typeScript",
+    "koa",
+    "socket.io",
+    "mongodb"
+  ],
+  "author": "lay",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/123456zzz/freedom/issues"
+  },
+  "homepage": "https://github.com/123456zzz/freedom#readme"
+}
