@@ -28,6 +28,10 @@ Freedom 是一款有趣的在线聊天应用. 使用 node.js, mongodb, socket.io
 
 #### 1. 登录模块
 
+1. 封装一个 modal
+2. login 和 logup 的 router 实现
+3. jwt 的测试
+
 #### 2. 聊天主页面实现
 
 #### 3. 群组和好友聊天的实现
@@ -36,8 +40,9 @@ Freedom 是一款有趣的在线聊天应用. 使用 node.js, mongodb, socket.io
 
 #### 5. 后面待续
 
-### 注意事项
+### 注意事项（or 技术可行）
 
 1. 登录使用 jwt,或者 oAuth2
 2. 对于服务器的错误统一包装处理
-3.
+3. 使用 webpack 对前端资源打包，cdn 加速，gulp 对后端工作流进行管理
+4.
