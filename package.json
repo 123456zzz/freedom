@@ -1,59 +1,65 @@
 {
-  "name": "freedom",
-  "version": "1.0.0",
-  "description": "freedom is a web chat application,build by react,koa,socket.io and mongodb.",
-  "main": "index.js",
-  "scripts": {
-    "start": "ts-node ./server/app.ts",
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/123456zzz/freedom.git"
-  },
-  "keywords": [
-    "IM",
-    "react",
-    "typeScript",
-    "koa",
-    "socket.io",
-    "mongodb"
-  ],
-  "author": "lay",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/123456zzz/freedom/issues"
-  },
-  "homepage": "https://github.com/123456zzz/freedom#readme",
-  "devDependencies": {
-    "@types/koa": "^2.11.0",
-    "@types/koa-bodyparser": "^4.3.0",
-    "@types/koa-json": "^2.0.18",
-    "@types/koa-router": "^7.4.0",
-    "@types/koa-static": "^4.0.1",
-    "@types/mongoose": "^5.5.41",
-    "@types/react": "^16.9.17",
-    "@types/react-dom": "^16.9.4",
-    "@typescript-eslint/eslint-plugin": "^2.16.0",
-    "@typescript-eslint/parser": "^2.16.0",
-    "eslint": "^6.8.0",
-    "eslint-plugin-react": "^7.18.0",
-    "ts-loader": "^6.2.1",
-    "typescript": "^3.7.4",
-    "webpack": "^4.41.5",
-    "webpack-cli": "^3.3.10"
-  },
-  "dependencies": {
-    "koa": "^2.11.0",
-    "koa-bodyparser": "^4.2.1",
-    "koa-json": "^2.0.2",
-    "koa-jwt": "^3.6.0",
-    "koa-router": "^7.4.0",
-    "koa-static": "^5.0.0",
-    "mongoose": "^5.8.9",
-    "react": "^16.12.0",
-    "react-dom": "^16.12.0",
-    "react-redux": "^7.1.3",
-    "redux": "^4.0.5"
-  }
+    "name": "freedom",
+    "version": "1.0.0",
+    "description": "freedom is a web chat application,build by react,koa,socket.io and mongodb.",
+    "main": "index.js",
+    "scripts": {
+        "start": "webpack-dev-server --open",
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "dev": "npm start && webpack --watch",
+        "build": "webpack",
+        "server": "ts-node ./server/app.ts"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/123456zzz/freedom.git"
+    },
+    "keywords": [
+        "IM",
+        "react",
+        "typeScript",
+        "koa",
+        "socket.io",
+        "mongodb"
+    ],
+    "author": "lay",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/123456zzz/freedom/issues"
+    },
+    "homepage": "https://github.com/123456zzz/freedom#readme",
+    "devDependencies": {
+        "@types/koa": "^2.11.0",
+        "@types/koa-bodyparser": "^4.3.0",
+        "@types/koa-json": "^2.0.18",
+        "@types/koa-router": "^7.4.0",
+        "@types/koa-static": "^4.0.1",
+        "@types/mongoose": "^5.5.41",
+        "@types/react": "^16.9.17",
+        "@types/react-dom": "^16.9.4",
+        "@typescript-eslint/eslint-plugin": "^2.16.0",
+        "@typescript-eslint/parser": "^2.16.0",
+        "css-loader": "^3.4.2",
+        "eslint": "^6.8.0",
+        "eslint-plugin-react": "^7.18.0",
+        "html-webpack-plugin": "^3.2.0",
+        "style-loader": "^1.1.3",
+        "ts-loader": "^6.2.1",
+        "typescript": "^3.7.4",
+        "webpack": "^4.41.5",
+        "webpack-cli": "^3.3.10"
+    },
+    "dependencies": {
+        "koa": "^2.11.0",
+        "koa-bodyparser": "^4.2.1",
+        "koa-json": "^2.0.2",
+        "koa-jwt": "^3.6.0",
+        "koa-router": "^7.4.0",
+        "koa-static": "^5.0.0",
+        "mongoose": "^5.8.9",
+        "react": "^16.12.0",
+        "react-dom": "^16.12.0",
+        "react-redux": "^7.1.3",
+        "redux": "^4.0.5"
+    }
 }
