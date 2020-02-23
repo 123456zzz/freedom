@@ -6,7 +6,7 @@ if (module.hot) {
     //@ts-ignore
     module.hot.accept("./App", function() {
         const App = require("./App").default;
-        ReactDOM.render(<App />, document.getElementById("root"));
+        ReactDOM.render(<App />, document.body);
     });
 }
-ReactDOM.render(<App />, document.getElementById("root"));
+ReactDOM.render(<App />, document.body);

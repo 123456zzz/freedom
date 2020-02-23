@@ -1,6 +1,6 @@
 const path = require("path");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
-const CleanWebpackPlugin = require("clean-webpack-plugin");
+const { CleanWebpackPlugin } = require("clean-webpack-plugin");
 const webpack = require("webpack");
 
 module.exports = {
@@ -12,7 +12,7 @@ module.exports = {
         hot: true
     },
     plugins: [
-        new CleanWebpackPlugin(["dist"]),
+        new CleanWebpackPlugin(),
         new HtmlWebpackPlugin({
             title: "Development"
         }),
@@ -27,10 +27,10 @@ module.exports = {
                 exclude: /node_modules/
             },
             {
-                test: /\.css$/,
+                test: /\.scss$/,
                 use: [
                     {
-                        loader: "style-loadr"
+                        loader: "style-loader"
                     },
                     {
                         loader: "css-loader"
@@ -39,11 +39,30 @@ module.exports = {
                         loader: "sass-loader"
                     }
                 ]
+            },
+            {
+                test: /\.css$/,
+                use: [
+                    {
+                        loader: "style-loader"
+                    },
+                    {
+                        loader: "css-loader"
+                    }
+                ]
+            },
+            {
+                test: /\.(woff|svg|eot|ttf)\??.*$/,
+                use: [
+                    {
+                        loader: "url-loader"
+                    }
+                ]
             }
         ]
     },
     resolve: {
-        extensions: [".tsx", ".ts", ".js"]
+        extensions: [".tsx", ".ts", ".js", "css", "scss"]
     },
     output: {
         filename: "bundle-[hash].js",

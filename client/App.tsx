@@ -1,7 +1,12 @@
 import React from "react";
-import "./APP.scss";
+import "./App.scss";
+import "./asserts/iconfont/iconfont.css";
 const App: React.FC = () => {
-    return <div className='app'></div>;
+    return (
+        <div className='app'>
+            <span className='iconfont icon-all'></span>
+        </div>
+    );
 };
 
 export default App;

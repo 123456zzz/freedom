@@ -1,8 +1,12 @@
-.app {
+body {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: green;
-    width: 1000;
-    height: 1000;
+    height: 100vh;
+    .app {
+        background-color: green;
+        width: 1000px;
+        height: 700px;
+        border-radius: 20px;
+    }
 }
