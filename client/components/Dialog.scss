@@ -1,0 +1,50 @@
+.dialog {
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 999;
+    background-color: rgba(255, 255, 255, 0.5);
+    .container {
+        width: 450px;
+        height: 350px;
+        background-color: yellow;
+        overflow: hidden;
+        position: relative;
+        .header {
+            background-color: green;
+            padding: 15px 0;
+            text-align: center;
+            .active {
+                color: blue;
+                // text-decoration: underline;
+            }
+            span {
+                padding: 0 30px;
+                display: inline-block;
+                font-size: 18px;
+                cursor: pointer;
+            }
+        }
+        .content {
+            white-space: nowrap;
+            position: absolute;
+            .login {
+                display: inline-block;
+                padding: 0 50px 0 50px;
+            }
+            .logup {
+                display: inline-block;
+                padding: 0 50px 0 50px;
+            }
+        }
+        .one {
+            left: 0;
+        }
+        .two {
+            left: -450px;
+        }
+    }
+}

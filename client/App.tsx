@@ -1,20 +1,24 @@
-import React from "react";
+import React, { Fragment } from "react";
 import "./App.scss";
 import "./asserts/iconfont/iconfont.css";
 import SearchBar from "./components/SearchBar";
 import ChatBox from "./components/ChatBox";
 import ChatInput from "./components/ChatInput";
+import Dialog from "./components/Dialog";
 const App: React.FC = () => {
     return (
-        <div className='app'>
-            <div className='leftContainer'>
-                <SearchBar></SearchBar>
+        <Fragment>
+            <Dialog></Dialog>
+            <div className='app'>
+                <div className='leftContainer'>
+                    <SearchBar></SearchBar>
+                </div>
+                <div className='rightContainer'>
+                    <ChatBox></ChatBox>
+                    <ChatInput></ChatInput>
+                </div>
             </div>
-            <div className='rightContainer'>
-                <ChatBox></ChatBox>
-                <ChatInput></ChatInput>
-            </div>
-        </div>
+        </Fragment>
     );
 };
 
