@@ -8,5 +8,15 @@ body {
         width: 1000px;
         height: 700px;
         border-radius: 20px;
+        .leftContainer {
+            display: inline-block;
+            width: 300px;
+            height: 100%;
+        }
+        .rightContainer {
+            display: inline-block;
+            width: 700px;
+            height: 100%;
+        }
     }
 }

@@ -1,0 +1,26 @@
+.SearchBar {
+    position: absolute;
+    overflow: hidden;
+    height: 44px;
+    input {
+        margin-top: 2px;
+        padding: 0px 15px 0px 35px;
+        height: 30px;
+        border-radius: 10px;
+        border: 0;
+        // background-color: rgba(255, 255, 255, 0.5);
+        // line-height: 40px;
+    }
+    .icon-search {
+        position: relative;
+        left: 35px;
+        top: 3px;
+        line-height: 40px;
+    }
+    .icon-close {
+        position: relative;
+        right: 30px;
+        top: 3px;
+        line-height: 40px;
+    }
+}
